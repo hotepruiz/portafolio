@@ -1,0 +1,13 @@
+
+@keyframes moverFondo {
+  from {
+    background-position: left -50px;
+  }
+  to {
+    background-position: left;
+  }
+}
+
+.borde-cinta-animada {
+  animation: moverFondo 5s linear;
+}

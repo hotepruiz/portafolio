@@ -1,0 +1,91 @@
+
+#root {
+  max-width: 1280px;
+ /* margin: 32px;*/
+  /*padding: 2rem;*/
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #a2a2b1aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.pl-20{
+  padding-left: 15%;
+}
+
+.cinta{
+  background-image: url('/src/assets/imagenes/fondo-crema.png');
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+
+  min-width: 22vw;
+  max-width: 22vw;
+}
+
+.borde-cinta-izquierda{
+  background-image: url('/src/assets/imagenes/cinta-bordes.png');
+  background-size: cover;
+  background-position: top -20px;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  
+  transform: scaleX(-1);
+
+  min-width: 2%;
+  max-width: 2%;
+}
+.borde-cinta-derecha{
+  background-image: url('/src/assets/imagenes/cinta-bordes.png');
+  background-size: cover;
+  background-position: left  -50px ;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  
+  min-width: 2%;
+  max-width: 2%;
+}
+
+
+.min-w-cinta {
+  min-width: 26vw;
+}
+
+.itemstop{
+  align-items: start;
+}
