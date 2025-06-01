@@ -47,15 +47,13 @@
   padding-left: 15%;
 }
 
-.cinta{
-  background-image: url('/src/assets/imagenes/fondo-crema.png');
-  background-size: cover;
-  background-position: top;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
 
-  min-width: 22vw;
-  max-width: 22vw;
+.min-w-cinta {
+  min-width: 26vw;
+}
+
+.itemstop{
+  align-items: start;
 }
 
 .borde-cinta-izquierda{
@@ -69,7 +67,10 @@
 
   min-width: 2%;
   max-width: 2%;
+
+  transition: background-position 0.4s ease-in-out;
 }
+
 .borde-cinta-derecha{
   background-image: url('/src/assets/imagenes/cinta-bordes.png');
   background-size: cover;
@@ -79,13 +80,32 @@
   
   min-width: 2%;
   max-width: 2%;
+
+  transition: background-position 0.3s ease-in-out;
 }
 
+.cinta{
+  background-image: url('/src/assets/imagenes/cinta2.png');
+  background-size: cover;
+  background-position: top;
+  background-attachment:local;
 
-.min-w-cinta {
-  min-width: 26vw;
+  min-width: 22vw;
+  max-width: 22vw;
+  max-height: 100vh;
 }
 
-.itemstop{
-  align-items: start;
+.cinta::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cinta::-webkit-scrollbar-track {
+  background: #a66730; /* color del fondo del scrollbar */
+  border-radius: 10px;
+}
+
+.cinta::-webkit-scrollbar-thumb {
+  background-color: #e67300; /* color del thumb (la barra que se mueve) */
+  border-radius: 10px;
+  border: 2px solid #a66730; /* opcional: borde para dar un espacio alrededor */
 }

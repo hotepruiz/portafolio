@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Dobra-medium';
+  src: url("./assets/fonts/Dobra-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @import "tailwindcss";
 
@@ -19,6 +26,7 @@
 @theme {
   --font-dobra: Dobra, sans-serif;
   --font-dobra-light: Dobra-light, sans-serif;
+  --font-dobra-medium: Dobra-medium, sans-serif;
 
   --breakpoint-3xl: 1920px;
   --color-naranja: #ff4800;
@@ -29,8 +37,10 @@
   --color-celeste:#20A4F3;
   --color-azul-oscuro: #247ba0;
   --color-crema-amarillo:#F2D492;
+ --color-verdeazul: #035952;
 
   --color-cafe: #865527;
+  --color-claro: #a66730
   --color-rojo: #b92929;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
@@ -65,10 +75,10 @@ a:hover {
 }
 
 body {
-  background-image: url('./assets/imagenes/cinta2.png');
+  /*background-image: url('./assets/imagenes/cinta2.png');*/
   background-size: contain;
   background-position: top;
-
+  background-color: #F2D492;
   /*background-color: #2E2E2F;*/
   margin: 0;
   display: flex;
@@ -76,6 +86,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 
 h1 {
   font-size: 3.2em;
