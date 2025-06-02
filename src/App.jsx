@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import {PantallaCarga} from './assets/components/pantalla_carga'
+import {BotonCinta} from './assets/components/botonCinta'
 import {audioHover, audioSelect} from './assets/audios'
 import './App.css'
 import "./index.css"
@@ -55,20 +56,29 @@ function App() {
             Programador y administrador de base de datos
           </div>
 
-          <div className="pt-6 text-2xl font-dobra-medium text-white break-words whitespace-normal" >
-          Sobre mi (Profecional)
-          </div>
-          <div className="pt-6 text-2xl font-dobra-medium text-white break-words whitespace-normal" >
-          Proyectos
-          </div>
-          <div className="pt-6 text-2xl font-dobra-medium text-white break-words whitespace-normal" >
-          Sobre mi (Personal)
-          </div>
 
-          <button onMouseEnter={() => audioHover()} onClick={() => moverCinta()} >
+
+
+
+          <button 
+          className="!bg-sky-naranja !hover:bg-sky-700 !px-4 !py-2 !rounded 1transition-colors !duration-300"
+          onMouseEnter={() => audioHover()} 
+          onClick={() => moverCinta()} >
             <div className="text-2xl font-dobra-medium text-white break-words whitespace-normal" >
               Sobre mi (Personal)
             </div>
+          </button> 
+
+
+          <BotonCinta 
+          onClick={() => moverCinta()}
+          texto="hola malditso desgraciados"/>
+          
+
+
+          <button class={'bg-indigo-600'}
+          onMouseEnter={() => audioHover()} onClick={() => moverCinta()} >
+            Hola!
           </button> 
  
         </div>
